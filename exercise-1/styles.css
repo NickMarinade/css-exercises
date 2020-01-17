@@ -63,3 +63,52 @@ body {
   margin-right: auto;
   max-width: 56em;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 600px){
+  /* Box */
+
+.box {
+  margin-top: var(--grid);
+  min-height: calc(4 * var(--grid));
+  padding: var(--grid);
+}
+
+.box__black {
+  background-color: black;
+}
+
+.box__red {
+  background-color: red;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "red text"
+    "black text";
+    
+}
+
+.grid__black {
+  grid-area: black;
+}
+
+.grid__red {
+  grid-area: red;
+}
+
+.grid__text {
+  grid-area: text;
+}
+
+/* Text */
+
+.text {
+  margin-top: var(--grid);
+}
+
+}
