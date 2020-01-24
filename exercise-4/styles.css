@@ -104,6 +104,7 @@ body {
 }
 
 figure {
+  height: 600px; /* Fixed height should help, but its bad for website adaptivity, so its better to use *Lazy Loading* from what ive read, but in that case css is not enough */
   max-height: 28em;
   margin-bottom: 0;
   margin-left: -10em;
